@@ -1,5 +1,7 @@
 # Adversarial Training For Sketch Retrieval
-[链接]https://arxiv.org/abs/1607.02748
+* Link https://arxiv.org/abs/1607.02748v2
+* Authors:	Creswell, Antonia; Bharath, Anil Anthony
+* Publication Date:	07/2016
 
 ### * 问题 : 
   在没有大量lablled data的情况下进行检索.
