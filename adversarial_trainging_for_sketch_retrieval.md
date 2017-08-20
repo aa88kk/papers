@@ -1,5 +1,5 @@
 # Adversarial Training For Sketch Retrieval
-https://arxiv.org/abs/1607.02748
+[链接]https://arxiv.org/abs/1607.02748
 
 ### * 问题 : 
   在没有大量lablled data的情况下进行visual search.
@@ -10,5 +10,7 @@ https://arxiv.org/abs/1607.02748
 
 ### * 主要步骤：
 1. 如普通GAN那样同时训练 Generator 和 Discriminator.
+![Train GAN](/imgs/adversarial_trainging_for_sketch_retrieval/2.png)
 2. 单独拿出 Discriminator, 去掉最后一层, 然后作为一个Encoder.
 3. 搜索时，Encode需要预测的数据, 然后和训练过的进行比较，找出相似度最高的前n个作为结果.
+![Search](/imgs/adversarial_trainging_for_sketch_retrieval/3.png)
