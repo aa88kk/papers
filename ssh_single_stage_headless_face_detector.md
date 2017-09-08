@@ -4,7 +4,7 @@
 * Authors:	Mahyar Najibi, Pouya Samangouei, Rama Chellappa, Larry Davis
 
 
-![SSH](/imgs/ssh/ssh_1.png)
+![SSH](/imgs/ssh/ssh_1.png&1)
 
 ### * 问题 : 
     如何快速有效的检测出照片中很小的头像. 特别是照片中有很多人.
