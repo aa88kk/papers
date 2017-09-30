@@ -13,8 +13,11 @@
 ![float32](/imgs/nonlinear_computation_in_linear_networks/1.png)
 
 ### 方法:
-    ⋅⋅⋅假设min等于最小的float32, 即min=1 x 2^-126, 那么绝对值在0, min之间, 都取值为0, 即不再是线性. 为了利用这个特性, 需要将参数的绝对值值限制在0, min之间, 从而替代tanh, relu等激活函数. 
-    ⋅⋅⋅但是由于数值太小, 没法通过反向传播来训练, 于是openai使用evolution strategies(ES)来优化, (ES也是openai今年很重要的一篇论文, 强烈推荐下)
+    
+    假设min等于最小的float32, 即min=1 x 2^-126, 那么绝对值在0, min之间, 都取值为0, 即不再是线性. 为了利用这个特性, 需要将参数的绝对值值限制在0, min之间, 从而替代tanh, relu等激活函数. 
+    
+    
+    但是由于数值太小, 没法通过反向传播来训练, 于是openai使用evolution strategies(ES)来优化, (ES也是openai今年很重要的一篇论文, 强烈推荐下)
 
 ### 实验结果:
     一个*线性*的神经网:
