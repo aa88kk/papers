@@ -10,7 +10,7 @@
     * 计算机因为浮点型长度的限制,  浮点数的计算不能做到真正的线性!
         以float32为例, 最小的数是1 x 2^-126, 小于它的话都算作0.
 
-![float32](/imgs/nonlinear_computation_in_linear_networks/1.png)
+![float32](/imgs/nonlinear_computation_in_deep_linear_networks/1.png)
 
 ### 方法:
     
